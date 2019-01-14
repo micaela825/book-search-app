@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 // static middleware
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../public/index.html"));
+// });
 
 // error handling middleware
 app.use((err, req, res, next) => {
