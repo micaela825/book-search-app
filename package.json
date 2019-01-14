@@ -8,7 +8,7 @@
     "deploy": "script/deploy",
     "start-server": "nodemon --watch server main.js -e html,js,css",
     "build-watch": "webpack -w",
-    "start": "app/main.js"
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
