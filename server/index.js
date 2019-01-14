@@ -23,8 +23,8 @@ app.use((err, req, res, next) => {
 });
 
 app.get("*", (req, res) => {
-  res.send(path.join(__dirname, "../public"));
-  // res.sendFile(path.join(__dirname, "../public/index.html"));
+  // res.send(path.join(__dirname, "../public"));
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 module.exports = app;
